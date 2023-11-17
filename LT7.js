@@ -22,7 +22,7 @@
 let sophut = +prompt("Nhập số phút: ");
 let cuocDT;
 
-if ( sophut <= 50 ) {
+if ( sophut <= 50 && sophut > 0 ) {
     cuocDT = sophut * 3000;
     alert("tiền cước điện thoại của bạn là: " + cuocDT)
 } else if ( 50 < sophut && sophut <= 200 ) {

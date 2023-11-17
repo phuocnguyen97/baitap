@@ -1,9 +1,9 @@
 let diemKT = +prompt("Nhập điểm kiểm tra: ");
 let diemGK = +prompt("Nhập điểm kiểm tra giữa kỳ: ");
 let diemCK = +prompt("Nhập điểm kiểm tra cuối kỳ: ");
-let xephanghocluc = ((diemKT + diemGK + diemCK) / 3);
+let xephanghocluc = ((diemKT + diemGK * 2 + diemCK *3) / 6);
 
-if ( xephanghocluc >= 8) {
+if ( xephanghocluc >= 8 && xephanghocluc <= 10) {
     alert("Học lực giỏi");
 } else if ( xephanghocluc < 8 && xephanghocluc >= 6.5 ) {
     alert("Học lực khá");
